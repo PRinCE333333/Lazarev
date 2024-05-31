@@ -1,0 +1,67 @@
+.page3 {
+  background-image: url(https://lazarev.kiev.ua/la24/reel-cover.webp);
+  height: 100vh;
+  width: 100%;
+  background-color: #111;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scaleX(0.7) scaleY(0);
+    opacity: 0;
+    border-radius: 30px;
+    z-index: 9999;
+  }
+
+  .page3-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3.3vw;
+      border-radius: 50%;
+      background-color: #fff;
+
+      i {
+        color: #000;
+        font-size: 3vw;
+      }
+    }
+
+    h5 {
+      font-size: 1vw;
+      border-radius: 50px;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      background-color: #fff;
+      color: #000;
+      font-size: 1vw;
+      font-weight: 700;
+      margin-top: 10px;
+      opacity: 0;
+      transition: all ease 0.5s;
+      text-transform: uppercase;
+      transform: translateY(10%);
+
+    }
+
+    &:hover h5 {
+      opacity: 1;
+      transform: translateY(0%);
+
+    }
+
+  }
+}

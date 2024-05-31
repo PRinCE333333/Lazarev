@@ -1,0 +1,58 @@
+.page5 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 13vh;
+
+
+  .section {
+    width: 100%;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13vh 10vw;
+    padding-bottom: 0;
+  }
+
+  .sec-left {
+    height: 100%;
+    width: 25%;
+    padding-top: 3vh;
+    border-top: 2px solid #000;
+
+    h2 {
+      color: black;
+    }
+
+    p {
+      color: #000;
+      margin-top: 15vh;
+    }
+  }
+
+  .sec-right {
+    height: 100%;
+    width: 70%;
+    background-color: blanchedalmond;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    video {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity ease 0.1s;
+    }
+  }
+}
